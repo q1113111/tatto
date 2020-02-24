@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,400,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Courgette&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  
+}
+
+.product-title{
+    width: 70vw;
+    background-color: #111; 
+    padding: 15px 0px 10px 15px;
+    margin: 50px 0;
+    float: right;
+ }
+ .product-title h1{
+    padding: 40px;
+    font-size: 2.2rem;
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+    border-bottom: 1px solid #333;
+    color: #fff;
+  
+ }
+ 
+ .container-fluid{
+     width: -webkit-calc(100% - 330px);
+     width: -moz-calc(100% - 330px);
+     width: calc(100% - 330px);
+     float: right;
+ }
+.product{
+    width: 100vw;
+    margin: 50px auto;
+    
+}
+.product .row{
+  width: 100%;
+   margin: auto;
+}
+
+.p-item{
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+  
+}
+.p-item:hover .p-txt{
+    opacity: 1;
+    -webkit-transform: scale(1) rotate(360deg);
+       -moz-transform: scale(1) rotate(360deg);
+        -ms-transform: scale(1) rotate(360deg);
+         -o-transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
+    
+}
+.p-item .p-txt::after{
+    content: "";
+    border-left: 1px solid #777;
+    border-bottom: 1px solid #999;
+    width: 0;
+    height: 0;
+    left: 20px;
+    bottom: 20px;
+    position: absolute;
+    -webkit-transition: 2s .5s;
+    -o-transition: 2s .5s;
+    -moz-transition: 2s .5s;
+    transition: 2s .5s;
+}
+.p-item .p-txt::before{
+    content: "";
+    border-right: 1px solid #999;
+    border-top: 1px solid #777;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    -webkit-transition: 2s .5s;
+    -o-transition: 2s .5s;
+    -moz-transition: 2s .5s;
+    transition: 2s .5s;
+}
+.p-item:hover .p-txt::after{
+     width: 95%;
+   height: 95%; 
+}
+.p-item:hover .p-txt::before{
+    width: 95%;
+  height: 95%; 
+}
+.p-item .p-txt{
+    background: rgb(0, 0, 0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 0px solid #fff;
+    opacity: 0;
+    text-align: center;
+    -webkit-transition: .8s;
+    -o-transition: .8s;
+    -moz-transition: .8s;
+    transition: .8s;
+    -webkit-transform: scale(0);
+       -moz-transform: scale(0);
+        -ms-transform: scale(0);
+         -o-transform: scale(0);
+            transform: scale(0);
+    
+ 
+}
+.p-item .p-txt >h3{
+    margin-bottom: 80px;
+    font-family: 'Courgette', cursive;
+    color: #fff;
+    letter-spacing: .8rem;
+    -webkit-transition: .8s .8s;
+    -o-transition: .8s .8s;
+    -moz-transition: .8s .8s;
+    transition: .8s .8s;
+
+}
+
+.p-item:hover .p-txt >h3{
+    color: #fff;
+    -webkit-transform: translateX(100px) scale(1.2);
+       -moz-transform: translateX(100px) scale(1.2);
+        -ms-transform: translateX(100px) scale(1.2);
+         -o-transform: translateX(100px) scale(1.2);
+            transform: translateX(100px) scale(1.2);
+
+}
+.p-item .p-txt >h3 >span{
+   -webkit-transition: .8s .8s;
+   -o-transition: .8s .8s;
+   -moz-transition: .8s .8s;
+   transition: .8s .8s;
+   display:inline-block;
+  
+}
+.p-item:hover .p-txt >h3 >span{
+    color: firebrick;
+    -webkit-transform: scale(1.2) translate(-105px,60px) ;
+       -moz-transform: scale(1.2) translate(-105px,60px) ;
+        -ms-transform: scale(1.2) translate(-105px,60px) ;
+         -o-transform: scale(1.2) translate(-105px,60px) ;
+            transform: scale(1.2) translate(-105px,60px) ;
+    font-weight: bolder;
+   
+}
+
+.p-item .p-txt > a{
+z-index: 2;
+margin-top: 80px;
+font-size: 2rem;
+color: #999;
+-webkit-transition: 1s .5s;
+-o-transition: 1s .5s;
+-moz-transition: 1s .5s;
+transition: 1s .5s;
+}
+.p-item:hover .p-txt > a{
+   color: #beaa73;
+  
+}
+
+  
+    
+
+.p-item .p-pic img{
+    width: 100%;
+    
+    vertical-align: middle;
+   
+}
+@media screen and (max-width:1200px){
+    .product{
+        margin-top: 100px;
+    }
+    .product-title{
+      float: none;
+    }
+    .container-fluid{
+        width: 100%;
+         float: none;
+    }
+    .product-title {
+        text-align: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+         margin:50px auto;
+         width: 90%;
+         padding: 0;
+         
+         -webkit-box-orient: vertical;
+         
+         -webkit-box-direction: normal;
+         
+         -webkit-flex-direction: column;
+         
+            -moz-box-orient: vertical;
+         
+            -moz-box-direction: normal;
+         
+             -ms-flex-direction: column;
+         
+                 flex-direction: column;
+         -webkit-box-pack: center;
+         -webkit-justify-content: center;
+            -moz-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
+            
+       }
+       .product-title {
+         height: 100px;
+       }
+       
+        
+       .product-title > h1{
+      
+         border: none;
+       }
+       @media screen and (max-width:767px){
+        .product{
+            margin-top: 0px;
+        }
+        .product-title {
+            width: 100%;
+        }
+        .container-fluid{
+          padding: 0;
+        }
+        .col-12{
+            
+            padding: 0;
+        }
+       }
+}

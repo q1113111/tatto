@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lobster|Uncial+Antiqua&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+.faq-one{
+      width:-moz-calc(90vw - 300px);
+    width:-webkit-calc(90vw - 300px);
+    width:calc(90vw - 300px);
+    margin-bottom: 100px;
+    height: 100%;
+    position: relative;
+   
+}
+.form-faq{
+   
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+   
+ 
+  
+    
+}
+.select.active{
+    position: absolute;
+    bottom:0px;
+  
+  
+   
+}
+.select{
+    
+    position: fixed;
+    width: 300px;
+    
+    background-color: #111;
+   
+    
+    -webkit-box-shadow: 5px 5px 20px #000;
+       -moz-box-shadow: 5px 5px 20px #000;
+            box-shadow: 5px 5px 20px #000;
+    border: 1px solid #222;
+    height: 350px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.select li {
+    border-bottom: 1px solid #333;
+    padding: 20px;
+    height: 70px;
+    position: relative;
+}
+.select li span{
+    text-align: center;
+    position: absolute;
+    color: #000 ;
+    background-color: #f7d18d;
+    font-size: .8rem;
+    right: 20px;
+    padding:0 10px 0 10px;
+ 
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+
+}
+.select  li a{
+    text-decoration: none;
+    color: #f7d18d;
+    font-family: 'Stoke', serif;
+    font-size: 1.2rem;
+
+}
+
+.form-question{
+  
+    width:60%;
+    margin: auto 350px;
+
+}
+.search{
+    margin-bottom: 50px;   
+    background-color: #111;
+    border: 1px solid #222;
+   
+}
+.search input[type="search"] ,
+.search button{
+    
+    border: none;
+    padding: 15px;
+   background:transparent;
+   -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+
+  outline:none;
+}
+.search input[type="search"]{
+    width:  92%;
+    color: white;
+}
+.search button{
+    width: 5%;
+    font-size: 1.5rem;
+    color: #777;
+}
+.question {
+    
+    line-height: 2;
+ 
+    background-color: #111;
+}
+.question li{
+    position: relative;
+}
+.question li span{
+    position: absolute;
+    padding:0 15px 0 15px;
+    -webkit-transform: scale(.8);
+       -moz-transform: scale(.8);
+        -ms-transform: scale(.8);
+         -o-transform: scale(.8);
+            transform: scale(.8);
+    top:30px;
+    right: 30px;
+    font-size: 1.2rem;
+    
+    color: #000;
+    background-color:#f7d18d ;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+}
+
+.question li  h2{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    padding: 30px;
+    border-bottom: 1px solid #222;
+    border-left: 3px solid #f7d18d;
+}
+.question li ul p {
+    display: none;
+    color: #777;
+    font-size: 1rem;
+}
+.question li ul li{
+    border-bottom: 1px solid #222;
+    padding: 20px;
+    font-family: 'Stoke', serif;
+    margin-bottom: 15px;
+    color: #999;
+    font-size: 1.5rem;
+
+}
+.question li ul li strong{
+    cursor: pointer;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    transition: .5s;
+}
+.question li ul li strong.active{
+    color: #f7d18d;
+}
+.question li ul li strong.active:hover{
+    color:#f7d18d;
+}
+.question li ul li strong:hover{
+   color: #fff;
+}
+.question li ul li ul{
+    display: none;
+}
+.question li ul li ul li{
+ 
+    color: #999;
+    font-size: 1rem;
+    list-style: disc;
+    margin-left: 20px;
+}
+@media screen and (max-width:1200px){
+    .faq{
+        width: 90%;
+    }
+    .faq-one{
+        width: 100%;
+       
+    }
+    .select{
+        position: static;
+        width: 100%;
+    }
+    .form-question{
+        width: 100%;
+        margin: 100px  auto 0 auto;
+    }
+    .search input[type="search"]{
+       width: 75%;
+       margin: auto;
+    }
+    .question li ul li{
+        font-size: 1.2rem;
+    }
+    .question li ul p{
+        font-size: .8rem;
+    }
+}

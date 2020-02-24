@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lobster|Uncial+Antiqua&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
+.local,
+.book{
+background-color: #111;
+width: 80%;
+
+-webkit-box-shadow: 5px 5px 0px 0 rgba(3,3,3,.25);
+   -moz-box-shadow: 5px 5px 0px 0 rgba(3,3,3,.25);
+        box-shadow: 5px 5px 0px 0 rgba(3,3,3,.25)
+}
+.local{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    width: 80%;
+    border-bottom: 1px solid #333;
+}
+.local .txt{
+    width: 50%;
+    padding: 50px;
+}
+.local .google-map{
+    width: 50%;
+    padding: 50px;
+}
+.local .google-map #map{
+    width: 100%;
+    height: 100%;
+  
+}
+.local .txt h2,.local .txt-item h3{
+    color: #fff;
+}
+.local .txt h2,
+.book h2{
+    margin-bottom: 50px;
+    font-family: 'Stoke', serif;
+    position: relative;
+    font-size: 2rem;
+    font-weight:900;
+}
+.local .txt h2::after
+{
+    content: "";
+    position: absolute;
+    width: 40%;
+    background: -webkit-gradient(linear, left top, right top, from(#f7d18d),to(#111));
+    background: -webkit-linear-gradient(left, #f7d18d,#111);
+    background: -moz-linear-gradient(left, #f7d18d,#111);
+    background: -o-linear-gradient(left, #f7d18d,#111);
+    background: linear-gradient(to right, #f7d18d,#111);
+    height: 3px;
+    left: 0;
+    top: 50px;
+}
+.local .txt-item h3{
+    font-family: 'Teko', sans-serif;
+    font-size: 1.7rem;
+}
+.local .txt-item p{
+    color: #999;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+}
+.book h2::after{
+    content: "";
+    position: absolute;
+    width: 30%;
+    background: -webkit-gradient(linear, left top, right top, from(#f7d18d),to(#111));
+    background: -webkit-linear-gradient(left, #f7d18d,#111);
+    background: -moz-linear-gradient(left, #f7d18d,#111);
+    background: -o-linear-gradient(left, #f7d18d,#111);
+    background: linear-gradient(to right, #f7d18d,#111);
+    height: 3px;
+    left: 70px;
+    bottom: 10px;
+}
+.book h2{
+    padding: 30px 70px;
+    color: #fff;
+}
+#book input, 
+#book select,
+#book textarea{
+    background-color: #222;
+    border:1px solid #333;
+}
+#book input:focus, 
+#book textarea:focus{
+    border-color:transparent;
+    -webkit-box-shadow:  0 0 0 .1rem #f7d18d;
+       -moz-box-shadow:  0 0 0 .1rem #f7d18d;
+            box-shadow:  0 0 0 .1rem #f7d18d;
+}
+
+#book select:focus{
+-webkit-box-shadow: none;
+   -moz-box-shadow: none;
+        box-shadow: none;
+border-color:transparent;
+}
+#book .form-row{
+    margin: 15px 10px;
+}
+#book textarea{
+  margin-left: 5px;
+}
+#book .form-group{
+    padding: 0 40px;
+}
+#book label{
+    color: #999;
+    font-family: 'Stoke', serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+#book .btn{
+background-color: #f7d18d;
+padding:10px 0 40px 0;
+font-size: 1.8rem;
+line-height: 2.5rem;
+font-family: 'Teko', sans-serif;
+margin-bottom: 20px;
+}
+@media screen and (max-width:1200px){
+.contact{
+    width: 100%;
+}
+.contact .about-title h1{
+    font-size: 2rem;
+}
+.contact .about-title >h1::before {
+    width: 50%;
+}
+.contact .about-title p{
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+.local{
+    width: 100%;
+}
+.local .txt{
+    width: 100%;
+    padding: 50px 20px;
+}
+
+.local .txt h2::after
+{
+    top: 30px;
+}
+.book{
+    width: 100%;
+}
+.local .google-map{
+    width: 100%;
+    padding: 0px 20px 50px 20px;
+   
+}
+.local .google-map #map{
+    width: 100%;
+    height: 300px;
+  
+}
+.local .txt h2,
+.book h2{
+    font-size: 1.5rem;
+}
+.book h2{
+    margin-bottom: 20px;
+}
+.book h2{
+    padding: 30px 0px 25px 30px;
+}
+.book h2::after{
+    width: 70%;
+    left: 30px;
+}
+#book .form-row {
+    margin: 15px 0px;
+}
+#book .form-group {
+    padding: 0 10px;
+}
+#book textarea {
+    margin:0;
+}
+}
