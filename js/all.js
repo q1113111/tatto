@@ -167,8 +167,9 @@ function masonry() {
 function arrowHide() {
     $(window).scroll(function () {
         var bannerHeight = $('.js-banner').height()
-        // console.log('scroll', $(this).scrollTop());
-        if ($(this).scrollTop() > bannerHeight - 700) {
+        console.log(bannerHeight);
+        console.log('scroll', $(this).scrollTop());
+        if ($(this).scrollTop() > 500) {
             $('.arrow').fadeIn()
         } else {
             $('.arrow').fadeOut()
@@ -180,7 +181,7 @@ function arrow() {
 
     $(".arrow").click(function () {
         $("html,body").animate({
-            scrollTop: $("#top").offset().top
+            scrollTop: 0
         }, 1000);
 
     });
@@ -197,6 +198,9 @@ function fancy() {
 function product() {
     var swiper = new Swiper('.swiper-container', {
         effect: 'cube',
+        autoplay: {
+            delay: 1500,
+          },
         grabCursor: true,
         cubeEffect: {
             shadow: true,
@@ -211,6 +215,9 @@ function product() {
     });
     var swiper = new Swiper('#swiper-container', {
         effect: 'coverflow',
+        autoplay: {
+            delay: 1000,
+          },
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: 'auto',
